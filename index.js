@@ -2,7 +2,7 @@
 
 let dwarves = ["Doc", "Dopey", "Bashful", "Grumpy"];
 
-const dwarfRollCall = (inputArray) => {
+const dwarfRollCall = (dwarfArray) => {
 let output = '';
   dwarfArray.forEach((name, i) => {
     output += `${i+1}. ${name} `;
@@ -48,14 +48,14 @@ const soup = ["tomato soup", "cheddar", "oyster crackers", "gouda"];
 const ingredients = ["garlic", "rosemary", "bread"];
 
 const findTheCheese = (inputArray) => {
-let output = `no cheese!`;
+  let output = `no cheese!`;
  
    for (let i = 0; i < inputArray.length; i++) {
     let name = inputArray[i];
-    if (cheeses.includes(name)) {
-  output = name;
+      if (cheeses.includes(name)) {
+        output = name;
           break;
   }
    }  
-   return output;
+return output;
 };
